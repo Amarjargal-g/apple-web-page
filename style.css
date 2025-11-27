@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -111,20 +110,74 @@ body {
 }
 
 /* Individual sections */
-.section-1 { height: 500px; background-image: url("./images/Figure.png"); color: white; justify-content: end; }
-.section-2 { height: 500px; background-image: url("./images/figure2.png"); color: white; justify-content: start; }
-.section-3 { height: 500px; background-image: url("./images/figure1.png"); color: black; justify-content: start; }
-.section-4 { height: 500px; background-image: url("./images/figure3.png"); color: white; justify-content: end; }
-.section-5 { height: 500px; background-image: url("./images/figure4.png"); color: #000; justify-content: start; }
-.section-6 { height: 500px; background-image: url("./images/figure5.png"); color: #1d1d1f; justify-content: start; }
-.section-7 { height: 500px; background-image: url("./images/figure6.png"); color: #1d1d1f; justify-content: start; }
-.section-8 { height: 500px; background-image: url("./images/figure7.png"); color: #1d1d1f; justify-content: end; }
-.section-9 { height: 500px; background-image: url("./images/figure8.png"); color: #1d1d1f; justify-content: start; }
-.section-10 { height: 500px; background-image: url("./images/figure9.png"); }
+.section-1 {
+  height: 500px;
+  background-image: url("./images/Figure.png");
+  color: white;
+  justify-content: end;
+}
+.section-2 {
+  height: 500px;
+  background-image: url("./images/figure2.png");
+  color: white;
+  justify-content: start;
+}
+.section-3 {
+  height: 500px;
+  background-image: url("./images/figure1.png");
+  color: black;
+  justify-content: start;
+}
+.section-4 {
+  height: 500px;
+  background-image: url("./images/figure3.png");
+  color: white;
+  justify-content: end;
+}
+.section-5 {
+  height: 500px;
+  background-image: url("./images/figure4.png");
+  color: #000;
+  justify-content: start;
+}
+.section-6 {
+  height: 500px;
+  background-image: url("./images/figure5.png");
+  color: #1d1d1f;
+  justify-content: start;
+}
+.section-7 {
+  height: 500px;
+  background-image: url("./images/figure6.png");
+  color: #1d1d1f;
+  justify-content: start;
+}
+.section-8 {
+  height: 500px;
+  background-image: url("./images/figure7.png");
+  color: #1d1d1f;
+  justify-content: end;
+}
+.section-9 {
+  height: 500px;
+  background-image: url("./images/figure8.png");
+  color: #1d1d1f;
+  justify-content: start;
+}
+.section-10 {
+  height: 500px;
+  background-image: url("./images/figure9.png");
+}
 
 /* Effects */
 .text1 {
-  background-image: linear-gradient(90.43deg, #0090f7 0%, #ba62fc 33.33%, #f2416b 66.67%, #f55600 100%);
+  background-image: linear-gradient(
+    90.43deg,
+    #0090f7 0%,
+    #ba62fc 33.33%,
+    #f2416b 66.67%,
+    #f55600 100%
+  );
   background-clip: text;
   color: transparent;
   margin-top: 350px;
@@ -150,304 +203,296 @@ body {
 .dotcolor1 {
   background-color: #0000006b;
 }
-  a{
+a {
   border: 1px solid transparent;
   border-radius: 100%;
   width: 8px;
   height: 8px;
   gap: 5px;
-  
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
   }
+  to {
+    transform: translateX(50px);
+  }
+}
 
 /* Small images */
-.section-12-1 {
-  height: 134px;
-  width: 238px;
+.section-12 {
   background-image: url("./images/backroundpic1.png");
-  background-size: cover;
 }
-
+.section-12-1 {
+  background-image: url("./images/backroundpic2.webp");
+}
 .section-12-2 {
-  height: 134px;
-  width: 238px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("https://shorturl.at/2ZH4l");
+  background-image: url("./images/tablink1.png");
 }
-
-.last-section {
-  display: flex;
-  gap: 20px;
-  overflow: hidden;
+.section-12-3 {
+  background-image: url("./images/tablink2.png");
 }
-
-/* Play button */
-.playbutton {
-  background-image: url(./images/playbutton.png);
-  width: 24px;
-  height: 24px;
-  margin: 10px 16px 10px 410px;
-}
-<<<<<<< HEAD
-
-/* Tablet 768px */
-=======
-/* tablet 768px */
-.body {
-  margin: 0;
-  font-family: "Inter", sans-serif;
-  text-align: center;
-}
->>>>>>> 6d448ec0bbb5dc230327d1023a0e5ea7a75e81b6
-@media (min-width: 768px) {
-  .menu {
-    width: 100%;
-    height: 48px;
+.section-12-4 {
+  background-image: url("./images/tablink3.png");
+  .section-12-5 {
+    background-image: url("./images/link1.jpg");
+  }
+  .section-12-6 {
+    background-image: url("./images/link2.jpg");
+  }
+  .section-12-7 {
+    background-image: url("./images/link3.jpg");
+  }
+  .section-12-8 {
+    background-image: url("./images/link4.jpg");
+  }
+  .section-12-9 {
+    background-image: url("./images/link5.jpg");
   }
 
-  .text {
-    font-size: 32px;
-  }
-
-  h2 {
-    font-size: 60px;
-  }
-<<<<<<< HEAD
-
-  .section-1 { height: 650px; background-image: url(./images/Figure-tab.png); }
-  .section-2 { height: 650px; background-image: url(./images/Figure-tab1.png); }
-  .section-3 { height: 650px; background-image: url(./images/Figure-tab2.png); }
-
-  .grid-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-
-  .section-10 {
-    height: 368px;
-    background-image: url(./images/blitzpic.jpg);
-    background-size: cover;
-    min-width: 689px;
-    height: 368px;
-    scroll-snap-align: center;
-  }
-
-  .section-10-1 {
-    height: 368px;
-    background-image: url(./images/silo.jpg);
-     background-size: cover;
-    min-width: 689px;
-  }
-
-  .sectioning {
+  .last-section {
     display: flex;
-    justify-content: space-between;
-    gap: 12px;
-    min-width: 689px;
-    height: 368px;
-    border: 1px solid white;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    margin-bottom: 40px;
-  }
-  .dots {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
- 
-}
-
-.dotcolor {
-  background-color: #1d1d1f;
-}
-
-.dotcolor1 {
-  background-color: #0000006b;
-}
-  a{
-  border: 1px solid transparent;
-  border-radius: 100%;
-  width: 8px;
-  height: 8px;
-  gap: 5px;
-  margin-bottom: 20px;
-  }
-  }
-
-
-
-
-/* Desktop 1920px */
-@media (min-width: 1920px) {
-  .menu {
-    width: 100%;
-    height: 44px;
-  }
-
-  .text {
-    font-size: 44px;
-  }
-
-  h2 {
-    font-size: 60px;
-  }
-
-  .section-1 { height: 692px; background-image: url(./images/desk1.png); }
-  .section-2 { height: 692px; background-image: url(./images/desk2.png); }
-  .section-3 { height: 692px; background-image: url(./images/desk3.png); }
-
-
-   /* desktop grid section */
-
-
-  .grid-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-  }
-  .section-4,
-  .section-5,
-  .section-6,
-  .section-7,
-  .section-8,
-  .section-9
-  {
-    height: 580px;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    gap: 10px;
-  }
-
-  .section-4 { background-image: url("./images/desk4.png"); color: white; }
-  .section-5 { background-image: url("./images/desk5.png"); color: black; }
-  .section-6 { background-image: url("./images/desk6.png"); color: #111; }
-  .section-7 { background-image: url("./images/desk7.png"); color: #111; }
-  .section-8 { background-image: url("./images/desk8.png"); color: #111; }
-  .section-9 { background-image: url("./images/desk9.png"); color: #000;}
-
-  /* texts in grid*/
-  .text2, .size {
-    text-align: center;
-  }
-
-  /* buttons in grid*/
-  .buttons {
-    justify-content: center;
-  }
-
-  .section-10{
-   background-image: url(./images/blanchet.jpg);
-   background-size: cover;
-   min-width: 1250px;
-   height: 668px;
-
-  }
-  .section-10-1{
-    background-image: url(./images/channing.png);
-    background-size: cover;
-    min-width: 1250px;
-    height: 668px;
-    scroll-snap-align: center;
-  }
-    .section-10-2{
-    background-image: url(./images/shrinking.jpg);
-    background-size: cover;
-    min-width: 1250px;
-    
-  }
-
-  .sectioning{
-    display: flex;
-    gap: 12px;
-    min-width: 1250px;
-    height: 668px;
-    border: 1px solid white;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-  }
-  .dots {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-  .dotcolor {
-  background-color: #1d1d1f;
-}
-
-  .dotcolor1 {
-  background-color: #0000006b;
-}
-  a{
-  width: 8px;
-  height: 8px;
-  border-radius: 100%;
-  }
-
-}
-=======
-  .buttons {
-    gap: 20px;
-  }
-  .section-1,
-  .section-2,
-  .section-3 {
-    height: 650px;
+    height: 134px;
+    width: 238px;
     background-size: cover;
     background-repeat: no-repeat;
-  }
-  .section-1 {
-    background-image: url(./images/Figure-tab.png);
-  }
-  .section-2 {
-    background-image: url(./images/Figure-tab1.png);
-  }
-  .section-3 {
-    background-image: url(./images/Figure-tab2.png);
-  }
-  .grid-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-  .section-4,
-  .section-5,
-  .section-6,
-  .section-7,
-  .section-8,
-  .section-9 {
-    height: 500px;
-    margin-bottom: 0;
+    animation: slide 2s infinite linear;
   }
 
-  .section-10 {
-    background-image: url(./images/blitzpic.jpg);
-    height: 368px;
-    background-size: cover;
-    background-repeat: no-repeat;
+  /* Play button */
+  .playbutton {
+    background-image: url(./images/playbutton.png);
+    width: 24px;
+    height: 24px;
+    margin: 10px 16px 10px 410px;
   }
-  .section-10-1 {
-    background-image: url(./images/gallery1.png);
-    height: 368px;
-    background-size: cover;
-    background-repeat: no-repeat;
+
+  /* Tablet 768px */
+  @media (min-width: 768px) {
+    .menu {
+      width: 100%;
+      height: 48px;
+    }
+
+    .text {
+      font-size: 32px;
+    }
+
+    h2 {
+      font-size: 60px;
+    }
+
+    .section-1 {
+      height: 650px;
+      background-image: url(./images/Figure-tab.png);
+    }
+    .section-2 {
+      height: 650px;
+      background-image: url(./images/Figure-tab1.png);
+    }
+    .section-3 {
+      height: 650px;
+      background-image: url(./images/Figure-tab2.png);
+    }
+
+    .grid-section {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .section-10 {
+      height: 368px;
+      background-image: url(./images/blitzpic.jpg);
+      background-size: cover;
+      min-width: 689px;
+      height: 368px;
+      scroll-snap-align: center;
+    }
+
+    .section-10-1 {
+      height: 368px;
+      background-image: url(./images/silo.jpg);
+      background-size: cover;
+      min-width: 689px;
+    }
+
+    .sectioning {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      min-width: 689px;
+      height: 368px;
+      border: 1px solid white;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      margin-bottom: 40px;
+    }
+    .dots {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .dotcolor {
+      background-color: #1d1d1f;
+    }
+
+    .dotcolor1 {
+      background-color: #0000006b;
+    }
+    a {
+      border: 1px solid transparent;
+      border-radius: 100%;
+      width: 8px;
+      height: 8px;
+      gap: 5px;
+      margin-bottom: 20px;
+    }
   }
-  .sectioning {
-    display: flex;
-    justify-content: space-between;
+
+  /* Desktop 1920px */
+  @media (min-width: 1920px) {
+    .menu {
+      width: 100%;
+      height: 44px;
+    }
+
+    .text {
+      font-size: 44px;
+    }
+
+    h2 {
+      font-size: 60px;
+    }
+
+    .section-1 {
+      height: 692px;
+      background-image: url(./images/desk1.png);
+    }
+    .section-2 {
+      height: 692px;
+      background-image: url(./images/desk2.png);
+    }
+    .section-3 {
+      height: 692px;
+      background-image: url(./images/desk3.png);
+    }
+
+    /* desktop grid section */
+
+    .grid-section {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .section-4,
+    .section-5,
+    .section-6,
+    .section-7,
+    .section-8,
+    .section-9 {
+      height: 580px;
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      gap: 10px;
+    }
+
+    .section-4 {
+      background-image: url("./images/desk4.png");
+      color: white;
+    }
+    .section-5 {
+      background-image: url("./images/desk5.png");
+      color: black;
+    }
+    .section-6 {
+      background-image: url("./images/desk6.png");
+      color: #111;
+    }
+    .section-7 {
+      background-image: url("./images/desk7.png");
+      color: #111;
+    }
+    .section-8 {
+      background-image: url("./images/desk8.png");
+      color: #111;
+    }
+    .section-9 {
+      background-image: url("./images/desk9.png");
+      color: #000;
+    }
+
+    /* texts in grid*/
+    .text2,
+    .size {
+      text-align: center;
+    }
+
+    /* buttons in grid*/
+    .buttons {
+      justify-content: center;
+    }
+
+    .section-10 {
+      background-image: url(./images/blanchet.jpg);
+      background-size: cover;
+      min-width: 1250px;
+      height: 668px;
+    }
+    .section-10-1 {
+      background-image: url(./images/channing.png);
+      background-size: cover;
+      min-width: 1250px;
+      height: 668px;
+      scroll-snap-align: center;
+    }
+    .section-10-2 {
+      background-image: url(./images/shrinking.jpg);
+      background-size: cover;
+      min-width: 1250px;
+    }
+
+    .sectioning {
+      display: flex;
+      gap: 12px;
+      min-width: 1250px;
+      height: 668px;
+      border: 1px solid white;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+    }
+    .dots {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      margin-top: 400pxpx;
+      gap: 10px;
+    }
+
+    .dotcolor {
+      background-color: #1d1d1f;
+    }
+
+    .dotcolor1 {
+      background-color: #0000006b;
+    }
+    a {
+      width: 8px;
+      height: 8px;
+      border-radius: 100%;
+    }
   }
 }
->>>>>>> 6d448ec0bbb5dc230327d1023a0e5ea7a75e81b6

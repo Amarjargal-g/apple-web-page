@@ -17,17 +17,34 @@ body {
 }
 
 .menu {
-  position: sticky;
-  z-index: 100;
-  top: 0;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f5f5f7cc;
-  padding: 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 60px;
+    flex-wrap: nowrap;
 }
-nav{
+.menutext {
+   display: flex;
+    flex: 1; 
+    justify-content: center; 
+    gap: 40px; 
+    align-items: center;
+}
+.menu-left img {
+  height: 44px;
+  cursor: pointer;
+}
+
+.menutext{
   display: none;
+}
+.menu-icons img {
+  width: 44px;
+  height: 44px;
+  margin-left: 20px;
+  cursor: pointer; 
+
 }
 
 .text {
@@ -346,7 +363,7 @@ a {
 
 @media(min-width:768px){
 
-   nav{
+   .menutext{
     display: none;
    }
    
@@ -422,10 +439,59 @@ a {
 /* desktop version */
 @media(min-width:1920px){
 
-  nav{
-    justify-content: center;
-    gap: 30px;
+  /* .menutext {
+    display: flex;         
+    flex: 1;                 
+    justify-content: center; 
+    gap: 40px;               
+    align-items: center;        
   }
+
+  .menu-left, .menu-icons {
+    flex: 0 0 auto;        
+  } */
+   /* Desktop menu links */
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: auto;
+    margin-left: 250px;
+    margin-right: 250px;
+    height: 60px;
+    flex-wrap: nowrap;
+  }
+
+  .menutext {
+    display: flex;
+    flex: 1; 
+    gap: 100px;
+    align-items: center;
+    padding-bottom: 15px;
+  }
+
+  .menutext a {
+    display: inline-block; 
+    white-space: nowrap;   
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .menu-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .menu-left img {
+    height: 44px;
+  }
+  .menu-button{
+    display: none;
+  }
+
   
   .section-1{background-image: url(./images/desk1.png);
    height: 692px;
@@ -532,5 +598,4 @@ a {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    gap: 10px;}
-}
-
+  }
